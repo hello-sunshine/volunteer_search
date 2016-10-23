@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*general styles*/
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 0em;
+	overflow: auto;
+}
+article {
+	width: 70%;
+	padding-top: 6em;
+	margin: 0 auto;
+}
+article p {
+	font-size: 2em;
+}
+/*button styling*/
+button {
+	width: 7em;
+	height: 7em;
+	font-size: 1.5em;
+	font-family: 'Fredoka One', cursive;
+	border-radius: 25%;
+	background-color: rgba(3,104,232,0.3);
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+}
+button:link, button:visited {
+	color: rgb(21,92,247);
+}
+button:hover, button:active {
+	color: rgb(3,101,255);
+}
+button a {
+	text-decoration: none;
+}
+.clear {
+	clear: both;	
+}
+#about {
+	width: 7em;
+	height: 7em;
+	font-size: 1.5em;
+	border-radius: 25%;
+	background-color: rgba(3,104,232,0.3);
+	font-family: 'Fredoka One', cursive;
+	float: right;
+	margin-bottom: 0.5em;
+	}
+#about:hover, #about:active {
+	color: rgb(3,101,255);	
+}
+#text {
+	font-size: 1.5em;
+	margin-left: 42%;
+}
+/* navigation styling*/
+header {
+	font-family: 'Fredoka One', cursive;
+	width: 100%;
+	overflow: auto;
+	position: absolute;	
+	/*background-color: rgba(3,104,232,0.3);*/
+}	
+header h1 {
+	font-family: 'Fredoka One', cursive;
+	width: 40%;
+	float: left;
+	margin: 0em;
+	padding-left: 0.5em;
+	font-size: 3em;
+}
+
+a:hover, a:active {
+	color: rgb(3,101,255);	
+}
+nav {
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 50%;
+	float: left;
+	margin: 1em 0em 0em 2em;
+	padding-top: 0.3em;
+	padding-bottom: 0.5em;
+}
+nav ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: left;
+}
+nav li {
+	display: inline;
+	padding-right: 1em;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Fredoka One', cursive;
+	color: #000;
+}
+
+/*background image styling*/
+article::after {
+	content: "";
+	background: url(background.jpg) repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+/*footer styling*/
+footer p a {
+	text-decoration: none;
+	color: rgb(3,101,255);	
+}
+footer {
+	text-align: center;
+	background-color: rgba(3,104,232,0.3);
+	padding: 0.5em 0em;
+	margin-top: 1em;	
+	position: absolute;
+	bottom: 0em;
+	width: 100%;
+	font-size: 1em;
+	    line-height: 0.5em;
+}
+
+/*map styling*/
+#map {
+	width: 600px;
+	height: 500px;
+	margin-top: 3em;
+      }
+/*form styling*/
+label {
+	display: block;
+	width: 20em;	
+}
+input[type="text"], 
+input[type="email"],
+input[type="submit"] {
+	margin-bottom: 1.5em;
+    width: 15em;
+    height: 3em;
+    border-radius: 13px;
+}
+
+#submit-button {
+	width: 4em;
+	height: 4em;
+	font-size: 1.5em;
+	font-family: 'Fredoka One', cursive;
+	border-radius: 25%;
+	background-color: rgba(3,104,232,0.3);
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 1em;
+	}
